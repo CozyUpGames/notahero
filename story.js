@@ -629,17 +629,12 @@ squiffy.story.start = '_default';
 squiffy.story.id = 'ac0e28f055';
 squiffy.story.sections = {
 	'_default': {
-		'text': "<h1 id=\"not-a-hero\">Not a hero</h1>",
-		'passages': {
-		},
-	},
-	'Intro': {
-		'text': "<h2 id=\"foreword\">Foreword</h2>\n<p>This story is inspired by choose your own adventure games and the adventure genre of fantasy novels. The first chapter was written within a day, so please pardon the sloppyness.\nThank you to Ravs_ on twitch helping me kick my butt into gear and continue my writing hobby. Thank you to Ravs_&#39;s mods for allowing this, and thank you to chat for being paitent with me.\n-Your pal, Rosie_er</p>\n<p>Are we ready to <a class=\"squiffy-link link-section\" data-section=\"begin\" role=\"link\" tabindex=\"0\">begin</a>?</p>",
+		'text': "<h1 id=\"not-a-hero\">Not a hero</h1>\n<h2 id=\"foreword\">Foreword</h2>\n<p>This story is inspired by choose your own adventure games and the adventure genre of fantasy novels. The first chapter was written within a day, so please pardon the sloppyness.\nThank you to Ravs_ on twitch helping me kick my butt into gear and continue my writing hobby. Thank you to Ravs_&#39;s mods for allowing this, and thank you to chat for being paitent with me.\n-Your pal, Rosie_er</p>\n<p>Are we ready to <a class=\"squiffy-link link-section\" data-section=\"begin\" role=\"link\" tabindex=\"0\">begin</a>?</p>",
 		'passages': {
 		},
 	},
 	'begin': {
-		'text': "<p>&quot;Hello, {label:hero=hero},&quot; from the darkness the voice echos between your ears.</p>\n<p><a class=\"squiffy-link link-passage\" data-passage=\"@replace hero=not a hero\" role=\"link\" tabindex=\"0\">&gt; I&#39;m not a hero.</a></p>",
+		'text': "<h2 id=\"chapter-1-not-a-hero\">Chapter 1 - Not a hero</h2>\n<p>&quot;Hello, {label:hero=hero},&quot; from the darkness the voice echos between your ears.</p>\n<p><a class=\"squiffy-link link-passage\" data-passage=\"@replace hero=not a hero\" role=\"link\" tabindex=\"0\">&gt; I&#39;m not a hero.</a></p>",
 		'passages': {
 			'not a hero': {
 				'text': "<p><a class=\"squiffy-link link-passage\" data-passage=\"journeyman\" role=\"link\" tabindex=\"0\">journeyman</a>, if you prefer</p>",
