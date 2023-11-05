@@ -629,21 +629,27 @@ squiffy.story.start = '_default';
 squiffy.story.id = 'ac0e28f055';
 squiffy.story.sections = {
 	'_default': {
-		'text': "<h1 id=\"not-a-hero\">Not a hero</h1>\n<h2 id=\"foreword\">Foreword</h2>\n<p>This story is inspired by choose your own adventure games and the adventure genre of fantasy novels. The first chapter was written within a day, so please pardon the sloppyness.\nThank you to Ravs_ on twitch helping me kick my butt into gear and continue my writing hobby. Thank you to Ravs_&#39;s mods for allowing this, and thank you to chat for being paitent with me.\n-Your pal, Rosie_er</p>\n<p>Are we ready to <a class=\"squiffy-link link-section\" data-section=\"begin\" role=\"link\" tabindex=\"0\">begin</a>?</p>",
+		'text': "<h1 id=\"not-a-hero\">Not a Hero</h1>\n<p><em>by Rosie_er</em></p>\n<p>Navigate through the story by clicking the links available. Some links may end up being locked if you choose certain paths. You also don&#39;t need to click every link. If you don&#39;t know where to go, look for a link. If there are no links... oops.</p>\n<p>There is currently 1 Chapter.</p>\n<p><a class=\"squiffy-link link-section\" data-section=\"To the foreword...\" role=\"link\" tabindex=\"0\">To the foreword...</a></p>",
 		'passages': {
 		},
 	},
-	'begin': {
-		'text': "<h2 id=\"chapter-1-not-a-hero\">Chapter 1 - Not a hero</h2>\n<p>&quot;Hello, {label:hero=hero},&quot; from the darkness the voice echos between your ears.</p>\n<p><a class=\"squiffy-link link-passage\" data-passage=\"@replace hero=not a hero\" role=\"link\" tabindex=\"0\">&gt; I&#39;m not a hero.</a></p>",
+	'To the foreword...': {
+		'text': "<h2 id=\"foreword\">Foreword</h2>\n<p>This story is inspired by choose your own adventure games and the adventure genre of fantasy novels. The first chapter was written within a day, so please pardon the sloppyness.\nThank you to Ravs_ on twitch helping me kick my butt into gear and continue my writing hobby. Thank you to Ravs_&#39;s mods for allowing this, and thank you to chat for being paitent with me.</p>\n<p>-Your pal, Rosie_er</p>\n<p>Are we ready to <a class=\"squiffy-link link-section\" data-section=\"Chapter 1\" role=\"link\" tabindex=\"0\">begin</a>?</p>",
+		'passages': {
+		},
+	},
+	'Chapter 1': {
+		'clear': true,
+		'text': "<h2 id=\"chapter-1-the-fool\">Chapter 1 - The Fool</h2>\n<p>&quot;<strong>Hello, {label:hero=hero},</strong>&quot; from the darkness the voice echos between your ears.</p>\n<p><a class=\"squiffy-link link-passage\" data-passage=\"@replace hero=not a hero\" role=\"link\" tabindex=\"0\">&gt; I&#39;m not a hero.</a></p>",
 		'passages': {
 			'not a hero': {
 				'text': "<p><a class=\"squiffy-link link-passage\" data-passage=\"journeyman\" role=\"link\" tabindex=\"0\">journeyman</a>, if you prefer</p>",
 			},
 			'journeyman': {
-				'text': "<p>> Who are you?</p>\n<p>&quot;You have so much to do, yet so little time.&quot; the voice continued, &quot;<a class=\"squiffy-link link-section\" data-section=\"Follow\" role=\"link\" tabindex=\"0\">Follow</a> me.&quot;</p>\n<p><a class=\"squiffy-link link-passage\" data-passage=\"who are you\" role=\"link\" tabindex=\"0\">&gt; I said who <em>are</em> you?</a></p>",
+				'text': "<p>> Who are you?</p>\n<p>&quot;<strong>You have so much to do, yet so little time.</strong>&quot; the voice continued, &quot;<strong><a class=\"squiffy-link link-section\" data-section=\"Follow\" role=\"link\" tabindex=\"0\">Follow</a> me.</strong>&quot;</p>\n<p><a class=\"squiffy-link link-passage\" data-passage=\"who are you\" role=\"link\" tabindex=\"0\">&gt; I said who <em>are</em> you?</a></p>",
 			},
 			'who are you': {
-				'text': "<p>&quot;You cannot begin to understand who I am or what my presence means. But I will give you this- heed my warning, journeyman. Do not pay mind to the temptation of the gods. They bare no goodwill towards you humans.&quot;</p>",
+				'text': "<p>&quot;<strong>You cannot begin to understand who I am or what my presence means. But I will give you this- heed my warning, journeyman. Do not pay mind to the temptation of the gods. They bare no goodwill towards you humans.</strong>&quot;</p>",
 			},
 		},
 	},
@@ -653,7 +659,7 @@ squiffy.story.sections = {
 		},
 	},
 	'_continue1': {
-		'text': "<p>The figure, still obscured, reaches into your mind, &quot;Why do you <a class=\"squiffy-link link-passage\" data-passage=\"hesitate\" role=\"link\" tabindex=\"0\">hesitate</a>? <a class=\"squiffy-link link-section\" data-section=\"Follow.\" role=\"link\" tabindex=\"0\">Follow.</a>&quot;</p>",
+		'text': "<p>The figure, still obscured, reaches into your mind, &quot;<strong>Why do you <a class=\"squiffy-link link-passage\" data-passage=\"hesitate\" role=\"link\" tabindex=\"0\">hesitate</a>? <a class=\"squiffy-link link-section\" data-section=\"Follow.\" role=\"link\" tabindex=\"0\">Follow.</a></strong>&quot;</p>",
 		'passages': {
 			'hesitate': {
 				'text': "<p>You take a breath, and pause to <a class=\"squiffy-link link-section\" data-section=\"look around\" role=\"link\" tabindex=\"0\">look around</a> at the void beyond the pillars.</p>",
@@ -666,18 +672,18 @@ squiffy.story.sections = {
 		},
 	},
 	'_continue2': {
-		'text': "<p>&quot;Quickly now. <a class=\"squiffy-link link-section\" data-section=\"Follow.\" role=\"link\" tabindex=\"0\">Follow.</a>&quot;</p>",
+		'text': "<p>&quot;<strong>Quickly now. <a class=\"squiffy-link link-section\" data-section=\"Follow.\" role=\"link\" tabindex=\"0\">Follow.</a></strong>&quot;</p>",
 		'passages': {
 		},
 	},
 	'Follow.': {
-		'text': "<p>As you step forward towards the figure, the ground beneath you begins to sway.</p>\n<p>&quot;It seems we had less time than I anticipated.&quot; The voice fades as a force pushes you <a class=\"squiffy-link link-section\" data-section=\"forward\" role=\"link\" tabindex=\"0\">forward</a>.</p>",
+		'text': "<p>As you step forward towards the figure, the ground beneath you begins to sway.</p>\n<p>&quot;<strong>It seems we had less time than I anticipated.</strong>&quot; The voice fades as a force pushes you <a class=\"squiffy-link link-section\" data-section=\"forward\" role=\"link\" tabindex=\"0\">forward</a>.</p>",
 		'passages': {
 		},
 	},
 	'forward': {
 		'clear': true,
-		'text': "<p>Your eyes shot open as the force, a hand, presses on your back again through your hammock.</p>\n<p>&quot;Captain said everyone, that means you too friend. You may be a passenger but you best do what the captain orders. Up <a class=\"squiffy-link link-passage\" data-passage=\"to the deck\" role=\"link\" tabindex=\"0\">to the deck</a> with you.&quot; The ship&#39;s first mate Barnes stands over your hammock, &quot;Hurry along.&quot;</p>",
+		'text': "<p>Your eyes shoot open as the force, a hand, presses on your back again through your hammock.</p>\n<p>&quot;Captain said everyone, that means you too friend. You may be a passenger but you best do what the captain orders. Up <a class=\"squiffy-link link-passage\" data-passage=\"to the deck\" role=\"link\" tabindex=\"0\">to the deck</a> with you.&quot; The ship&#39;s first mate Barnes stands over your hammock, &quot;Hurry along.&quot;</p>",
 		'passages': {
 			'to the deck': {
 				'text': "<p>The dream fades from your mind as you center yourself. As you hurriedly lace your boots you think over <a class=\"squiffy-link link-passage\" data-passage=\"your plan\" role=\"link\" tabindex=\"0\">your plan</a>.</p>",
@@ -690,16 +696,84 @@ squiffy.story.sections = {
 				},
 			},
 			'curse': {
-				'text': "<p>The curse that upon the day of the 33rd year of your life, you will fall into a fit of magical energy, destroying all those around you, including yourself.</p>\n<p>You shiver at the thought.\nLet&#39;s <a class=\"squiffy-link link-section\" data-section=\"try to forget\" role=\"link\" tabindex=\"0\">try to forget</a> for now...</p>",
+				'text': "<p>The curse that upon the day of the 33rd year of your life, you will fall into a fit of magical energy, destroying all those around you, including yourself. You are 32 as of today.</p>\n<p>You shiver at the thought.\nLet&#39;s <a class=\"squiffy-link link-section\" data-section=\"try to forget\" role=\"link\" tabindex=\"0\">try to forget</a> for now...</p>",
 			},
 		},
 	},
 	'try to forget': {
-		'text': "<p>You hurry to the deck, a crowd of passengers stand impatiently waiting for the Captain&#39;s announcement.</p>",
+		'clear': true,
+		'text': "<p>You hurry to the deck with the rest of the passengers and crew.</p>\n<p>As you reach the deck, a man stands from his seat on a crate nearby. He approaches you, a deck of cards in his hand, and a kind smile on his face.</p>\n<p><a class=\"squiffy-link link-section\" data-section=\"Croft intro\" role=\"link\" tabindex=\"0\">&gt; Can I help you?</a></p>",
 		'passages': {
-			'announcement': {
-				'text': "",
+		},
+	},
+	'Croft intro': {
+		'text': "<p>&quot;No, not particularly,&quot; the stranger says in his calm baratone voice. &quot;Though I may be able to provide some help to you.&quot;</p>\n<p><a class=\"squiffy-link link-passage\" data-passage=\"Croft offer\" role=\"link\" tabindex=\"0\">&gt; Go on...</a></p>",
+		'passages': {
+			'Croft offer': {
+				'text': "<p>&quot;My name is Croft. The cards tell me I&#39;m to provide you a reading,&quot; the stranger holds up his <a class=\"squiffy-link link-passage\" data-passage=\"deck of cards\" role=\"link\" tabindex=\"0\">deck of cards</a>. Your brow furrowed with sceptisism.</p>",
 			},
+			'deck of cards': {
+				'text': "<p>You recognize the cards as Tarotta cards, a deck of divination, typically weilded by fortune tellers.</p>\n<p>&quot;I can promise the reading will cost you nothing but a few spare moments of your time.&quot; Croft smiles warmly. &quot;So what do you say, would you like <a class=\"squiffy-link link-section\" data-section=\"a reading\" role=\"link\" tabindex=\"0\">a reading</a>? Or is the future one that you wish to keep <a class=\"squiffy-link link-section\" data-section=\"a mystery\" role=\"link\" tabindex=\"0\">a mystery</a>?&quot;</p>",
+			},
+		},
+	},
+	'a mystery': {
+		'text': "<p>&quot;I see. The offer is still here for when we meet again.&quot; Croft falls back into the crowd.\n<a class=\"squiffy-link link-section\" data-section=\"Leave\" role=\"link\" tabindex=\"0\">Leave</a></p>",
+		'passages': {
+		},
+	},
+	'a reading': {
+		'text': "<p>&quot;Wonderful.&quot; He pulls you aside to the crate he was sitting on. His hands move swiftly across the deck of cards as he draws 3 from the top of the deck and lays them infront of you face down, one at a time. &quot;The first represents the Wanderer, you. The second represents the Way, how the next step of your journey lead to. The last represents the Warning, what may lead you astray.&quot;</p>\n<p>Would you like to <a class=\"squiffy-link link-section\" data-section=\"flip the cards\" role=\"link\" tabindex=\"0\">flip the cards</a>?</p>",
+		'passages': {
+		},
+	},
+	'flip the cards': {
+		'text': "<p><img src=\"https://i.imgur.com/TdVuaxl.png\" alt=\"The Fool (upright), The Hermit (upright), and the Heirophant (reversed)\"></p>\n<p>&quot;<a class=\"squiffy-link link-passage\" data-passage=\"The Fool\" role=\"link\" tabindex=\"0\">The Fool</a>, <a class=\"squiffy-link link-passage\" data-passage=\"The Priestess\" role=\"link\" tabindex=\"0\">The Priestess</a>, <a class=\"squiffy-link link-passage\" data-passage=\"The Hierophant reversed\" role=\"link\" tabindex=\"0\">The Hierophant reversed</a>...&quot; Croft thinks for a moment, &quot;all very interesting outcomes...&quot;</p>\n<p><a class=\"squiffy-link link-section\" data-section=\"Leave\" role=\"link\" tabindex=\"0\">&gt; Thanks for the reading, but I think it&#39;s time for me to leave.</a></p>\n<p><a class=\"squiffy-link link-section\" data-section=\"_continue3\" role=\"link\" tabindex=\"0\">&gt; What does it mean?</a></p>",
+		'passages': {
+			'The Fool': {
+				'text': "<p>The fool is not necessarily an idiot. The card represents stepping into new beginnings, a start of a perilous journey.</p>",
+			},
+			'The Priestess': {
+				'text': "<p>The Priestess, or the High Priestess, represents something or someone just as mysterious as they are powerful.</p>",
+			},
+			'The Hierophant reversed': {
+				'text': "<p>The Hierphant often represents divine leaders, often those representing the gods. Reversed, however, represents corruption of those people, often from an outside source.</p>",
+			},
+		},
+	},
+	'_continue3': {
+		'text': "<p>&quot;You embark on your journey to Solaria by this very ship, however you have a long perilous journey ahead of you. Watch your step, as things will get dangerous very quickly. The next step will bring to you a mysterious power, one that may be weilded, if done so by the right person. As for the warning, it is an odd one, the reversed Hierophant. Beware those representing the gods, for they being coruptted. An ominous warning, to say the least.&quot; He returns the cards to his deck and stands tall. &quot;That concludes your reading. You have a lot of potential, {name}.&quot;</p>\n<p><a class=\"squiffy-link link-passage\" data-passage=\"my name\" role=\"link\" tabindex=\"0\">&gt; I don&#39;t recall ever giving you my name...</a></p>",
+		'passages': {
+			'my name': {
+				'text': "<p>&quot;How forgetful on both our parts. I am the divination mage, Oswald C. Croft, at your service.&quot; Croft bows. &quot;It looks as if the captian is here. Best we <a class=\"squiffy-link link-section\" data-section=\"Leave\" role=\"link\" tabindex=\"0\">listen</a> to his announcement.&quot; He fades back into the crowd</p>",
+			},
+		},
+	},
+	'Leave': {
+		'clear': true,
+		'text': "<p>You turn and walk back into the crowd. As you reach the front of the crowd, the captain appears, clears his throat, and waits for the crowd to <a class=\"squiffy-link link-passage\" data-passage=\"fall silent\" role=\"link\" tabindex=\"0\">fall silent</a>.</p>",
+		'passages': {
+			'fall silent': {
+				'text': "<p>&quot;I&#39;m sure you will all be pleased to learn that we will be stopping by the island of Arvyre.&quot; Murmers of joy rise from the crowd. &quot;For those who are new to sailing between continents, Arvyre is home to to the world-famous line of Delanno wine and Fumestone jerky. We have 3 days to dock and restock, make of that time what you will.&quot;</p>\n<p>Suddenly your head starts to ring, your temples pulse, as you <a class=\"squiffy-link link-passage\" data-passage=\"grip your head\" role=\"link\" tabindex=\"0\">grip your head</a>.</p>",
+			},
+			'grip your head': {
+				'text': "<p>&quot;<strong>Journeyman,</strong>&quot; a familiar etheral voice pierces your mind, &quot;<strong>take heed my words. Arvyre was home to the god of merriment, yet his power dwindles with each passing day. He is being eaten alive, by what, I am not sure.</strong>&quot;</p>\n<p><a class=\"squiffy-link link-passage\" data-passage=\"voice continues\" role=\"link\" tabindex=\"0\">&gt; Not now please, I&#39;m trying to act normal.</a></p>",
+			},
+			'voice continues': {
+				'text': "<p>The voice starts to fade, &quot;<strong>Get involved if you will, but do not be tempted by anything <em>He</em> has to offer.</strong>&quot;</p>\n<p>The ringing fades, but so does <a class=\"squiffy-link link-passage\" data-passage=\"your vision\" role=\"link\" tabindex=\"0\">your vision</a>.</p>",
+			},
+			'your vision': {
+				'text': "<p>You hear a distant scream as gravity gets the better of you.</p>\n<p><a class=\"squiffy-link link-passage\" data-passage=\"Rest\" role=\"link\" tabindex=\"0\">&gt; Maybe I should rest...</a></p>",
+			},
+			'Rest': {
+				'text': "<p><a class=\"squiffy-link link-section\" data-section=\"Chapter 2\" role=\"link\" tabindex=\"0\">Go to Chapter 2</a></p>",
+			},
+		},
+	},
+	'Chapter 2': {
+		'clear': true,
+		'text': "<h2 id=\"chapter-2-the-magician\">Chapter 2 - The Magician</h2>\n<p><em>To be continued...</em></p>",
+		'passages': {
 		},
 	},
 }
